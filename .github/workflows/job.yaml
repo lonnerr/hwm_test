@@ -8,4 +8,4 @@ jobs:
     steps:
       - name: Print current date and time
         shell: bash
-        run: echo "Current date and time is: $(date)"
+        run: echo "Current date and time is $(date)"
