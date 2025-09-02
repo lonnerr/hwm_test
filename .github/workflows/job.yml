@@ -12,4 +12,4 @@ jobs:
     steps:
       # Шаг 1: "Вывести на экран" текущие дату и время
       - name: Print current date and time
-        run: echo "Current date and time is: $(date)"
+        run: echo "Current date and time is: $(date)$"
