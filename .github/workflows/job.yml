@@ -1,0 +1,15 @@
+name: Print Current Date and Time # Название вашего workflow
+
+# Запускать этот workflow на событиях:
+# 1. При создании или обновлении Pull Request (pull_request)
+# 2. При пуше (загрузке кода) в ЛЮБУЮ ветку (push)
+on: [pull_request, push]
+
+jobs:
+  print-datetime: # Название job
+    runs-on: ubuntu-latest # Запускать на последней версии Ubuntu
+
+    steps:
+      # Шаг 1: "Вывести на экран" текущие дату и время
+      - name: Print current date and time
+        run: echo "Current date and time is: $(date)"
