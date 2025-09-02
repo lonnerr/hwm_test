@@ -7,4 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print current date and time
-        run: echo "Current date and time is: $$(date)"
+        shell: bash
+        run: echo "Current date and time is: $(date)"
